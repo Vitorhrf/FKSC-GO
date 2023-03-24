@@ -1,0 +1,84 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/*@import acima importa a biblioteca Font Awesome para usar os icones das redes sociais*/
+
+body {
+	 background-color: rgba(255, 0, 68, 0.05);
+	 /*A propriedade background-color define a cor de fundo do corpo elemento. 
+	 Neste caso, A cor é definida em RGBA (vermelho, verde, azul e alfa), 
+	 com um valor de vermelho forte e um valor de alfa baixo, 
+	 o que resulta em uma cor vermelha muito suave.*/
+}
+ .social-icons {
+	 padding: 0;
+	 list-style: none;
+	 margin: 1em;
+	 /*A classe .social-icons define o estilo da lista de ícones de mídia social. 
+	 A propriedade list-style é definida como none para remover os marcadores de lista padrão, 
+	 a propriedade padding é definida como zero e a propriedade margin é definida como 1em.*/
+}
+ .social-icons li {
+	 display: inline-block;
+	 margin: 0.15em;
+	 position: relative;
+	 font-size: 1.2em;
+	 /*A classe .social-icons li define o estilo dos itens da lista de ícones de mídia social. 
+	 A propriedade display é definida como inline-block para colocar cada ícone em uma única linha. 
+	 A propriedade margin é definida como 0.15em para adicionar um espaçamento entre os ícones e 
+	 a propriedade position é definida como relative para posicionar os ícones em relação ao elemento pai.*/
+}
+ .social-icons i {
+	 color: #fff;
+	 position: absolute;
+	 top: 15px;
+	 left: 15px;
+	 transition: all 265ms ease-out;
+	 /*A classe .social-icons i define o estilo dos ícones de mídia social. 
+	 A propriedade position é definida como absolute para posicionar os ícones em relação ao elemento pai. 
+	 A propriedade color é definida como branco (#fff) para definir a cor do ícone e 
+	 a propriedade transition é definida para animar a transição quando o ícone é destacado.*/
+}
+ .social-icons a {
+	 display: inline-block;
+	 /*A classe .social-icons a define o estilo do link que envolve cada ícone. 
+	 A propriedade display é definida como inline-block para permitir que 
+	 os links sejam posicionados no mesmo nível dos ícones.*/
+}
+ .social-icons a:before {
+	 transform: scale(1);
+	 -ms-transform: scale(1);
+	 -webkit-transform: scale(1);
+	 content: " ";
+	 width: 50px;
+	 height: 50px;
+	 border-radius: 100%;
+	 display: block;
+	 background: linear-gradient(45deg, #f04, #555);
+	 transition: all 265ms ease-out;
+	 /*A pseudo-classe :before é usada para adicionar um círculo ao redor de cada ícone. 
+	 A propriedade transform é usada para dimensionar o círculo para um tamanho de 50px. 
+	 A propriedade border-radius é usada para definir o círculo como um círculo perfeito. 
+	 A propriedade content é usada para inserir um espaço vazio antes do ícone e 
+	 a propriedade background é usada para definir um gradiente linear para o círculo.*/
+}
+ .social-icons a:hover:before {
+	 transform: scale(0);
+	 transition: all 265ms ease-in;
+}
+ .social-icons a:hover i {
+	 transform: scale(2.2);
+	 -ms-transform: scale(2.2);
+	 -webkit-transform: scale(2.2);
+	 color: #f04;
+	 background: -webkit-linear-gradient(45deg, #f04, #555);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 transition: all 265ms ease-in;
+	 /*A pseudo-classe :hover é usada para animar a transição do ícone quando o mouse é movido sobre o ícone. 
+	 A propriedade transform é usada para dimensionar o ícone para um tamanho maior. 
+	 A propriedade color é usada para definir a cor do ícone como vermelho e 
+	 a propriedade background é usada para definir um gradiente linear diferente para o ícone. 
+	 A propriedade -webkit-background-clip e -webkit-text-fill-color são usadas para permitir que 
+	 o gradiente seja aplicado ao texto. A propriedade transition é usada para animar a transição 
+	 do ícone quando o mouse é movido sobre o ícone.*/
+}
+ 

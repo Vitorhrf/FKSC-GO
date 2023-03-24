@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+}
+
+.logo-fksc {
+  width: 60px;
+  transition: 1.2s;
+}
+.logo-fksc:hover{
+  rotate: 360deg;
+}
+.kanji-karate {
+  width: 160px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttonHeader {
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.buttonHeader:hover {
+  border-color: #ff0044;
+}
+.container{
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  background-color: #CCC;
+}
+.item{
+  margin-top: 20px;
+  width: 100vh;
+  height: 50vh;
+  border-radius: 10px;
+  overflow: hidden; /* para evitar que as imagens ultrapassem as bordas arredondadas */
+}
+.imagem-carrosel{
+  width: 100vh;
+  height: 50vh;
+  transition: transform 8s;
+}
+.imagem-carrosel:hover{
+  transform: scale(1.1);
+}
+.legenda-carrosel{
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
+  background: rgba( 0, 0, 0, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
