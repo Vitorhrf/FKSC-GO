@@ -29,8 +29,8 @@ body {
  .social-icons i {
 	 color: #fff;
 	 position: absolute;
-	 top: 15px;
-	 left: 15px;
+	 top: 11px;
+	 left: 11px;
 	 transition: all 265ms ease-out;
 	 /*A classe .social-icons i define o estilo dos ícones de mídia social. 
 	 A propriedade position é definida como absolute para posicionar os ícones em relação ao elemento pai. 
@@ -48,11 +48,11 @@ body {
 	 -ms-transform: scale(1);
 	 -webkit-transform: scale(1);
 	 content: " ";
-	 width: 50px;
-	 height: 50px;
+	 width: 40px;
+	 height: 40px;
 	 border-radius: 100%;
 	 display: block;
-	 background: linear-gradient(45deg, #f04, #555);
+	 background: linear-gradient(45deg, #f03, #444);
 	 transition: all 265ms ease-out;
 	 /*A pseudo-classe :before é usada para adicionar um círculo ao redor de cada ícone. 
 	 A propriedade transform é usada para dimensionar o círculo para um tamanho de 50px. 
